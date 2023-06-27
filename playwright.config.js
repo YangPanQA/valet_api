@@ -28,7 +28,7 @@ module.exports = defineConfig({
    baseURL: 'https://www.bankofcanada.ca/valet',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on-first-retry',
+    trace: 'on', // turn on the trace in the report -- Record a trace for each test
   },
 
   /* Configure projects for major browsers */
