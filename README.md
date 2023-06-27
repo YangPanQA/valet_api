@@ -18,14 +18,14 @@ Due to the limited visibilities we had regarding the Bank of Canada valet API (h
 
 4. Performance and Scalability: If this API is intended to handle a large number of requests, testing its performance and scalability becomes crucial. Load testing can be performed to ensure that the API can handle high traffic and maintain acceptable response times. It's also important to check for potential bottlenecks or limitations in the system architecture that might affect its scalability.
 
-5. Error Handling: Robust error handling is crucial for any API. Testing should cover scenarios such as invalid parameters, server errors, or network connectivity issues. It's important to ensure that appropriate error messages and status codes are returned, and the API gracefully handles such situations without compromising data integrity.
+5. Error Handling: Robust error handling is crucial for any API. Testing should cover scenarios such as invalid parameters and server errors. It's important to ensure that appropriate error messages and status codes are returned, and the API gracefully handles such situations without compromising data integrity.
 
 Addtional steps I would have taken with more time:
 
-1. Generate an HTML report using jest-html-reporters framework, to either store in the local or on a server.
+1. CI intergrations using github actions.
 
-2. CI intergrations using github actions.
+2. Improve the test data storage -- to store them in github secrets, database, etc.
 
-3. Improve the test data storage -- to store them in github secrets, database, etc.
+3. Enhance the automated testing coverage of error handlings as listed on https://www.bankofcanada.ca/valet/docs#errors.
 
-4. Enhance the automated testing coverage of error handlings as listed on https://www.bankofcanada.ca/valet/docs#errors.
+4. Create a separate file with all the currency conversions (can be in a a utility file) and read from there.
